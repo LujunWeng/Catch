@@ -52,7 +52,7 @@ namespace Catch {
                     ++it ) {
                 testsRunForGroup++;
                 if( m_testsAlreadyRun.find( *it ) == m_testsAlreadyRun.end() ) {
-
+					// if a testcase has not been ran, then it doesn't belong to the "AlreadyRun" set.
                     if( context.aborting() )
                         break;
 
