@@ -11,6 +11,11 @@
 #include <string>
 #include "catch_result_type.h"
 
+/*
+AssertionResult class contains two structs, AssertionInfo and AssertionResultData
+As their names show, AssertionInfo have informations about the assertion itself and 
+AssertionResultData have the actual result data of assertion. 
+*/
 namespace Catch {
 
     struct AssertionInfo

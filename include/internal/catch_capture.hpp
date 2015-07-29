@@ -40,7 +40,7 @@
         } \
         INTERNAL_CATCH_REACT( __catchResult ) \
     } while( Catch::isTrue( false && (expr) ) ) // expr here is never evaluated at runtime but it forces the compiler to give it a look
-
+												// 为了让编译器对表达式进行检验，看其是否合法
 ///////////////////////////////////////////////////////////////////////////////
 #define INTERNAL_CATCH_IF( expr, resultDisposition, macroName ) \
     INTERNAL_CATCH_TEST( expr, resultDisposition, macroName ); \
