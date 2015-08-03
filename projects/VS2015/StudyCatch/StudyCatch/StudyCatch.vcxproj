@@ -49,6 +49,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -63,6 +64,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -159,6 +161,11 @@
     <ClInclude Include="..\..\..\..\include\reporters\catch_reporter_junit.hpp" />
     <ClInclude Include="..\..\..\..\include\reporters\catch_reporter_teamcity.hpp" />
     <ClInclude Include="..\..\..\..\include\reporters\catch_reporter_xml.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="catch_main.cpp" />
+    <ClCompile Include="sampletests.cpp" />
+    <ClCompile Include="sampletests2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

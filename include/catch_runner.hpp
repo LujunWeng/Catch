@@ -24,6 +24,7 @@ namespace Catch {
     class Runner {
 
     public:
+
         Runner( Ptr<Config> const& config )
         :   m_config( config )
         {
